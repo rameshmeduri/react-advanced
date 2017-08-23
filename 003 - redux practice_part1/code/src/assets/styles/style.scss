@@ -1,0 +1,84 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #fff;
+}
+
+.main-wrapper {
+	width: 1000px;
+	margin: 50px auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.chat {
+	padding: 20px;
+	flex: 1;
+	max-height: 300px;
+	overflow-y: auto;
+
+	&__input {
+		margin-top: 50px;
+		padding: 5px 10px;
+		font-size: 20px;
+		width: 60%;
+	}
+}
+
+.message {
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&__date {
+		color: grey;
+		padding-right: 5px;
+		font-size: 12px;
+	}
+	&__author {
+		font-weight: bold;
+		padding-right: 5px;
+	}
+}
+
+.users {
+	width: 300px;
+	border-left: 1px solid #ccc;
+
+	& button {
+		display: block;
+		margin: 20px auto;
+	}
+
+	&__title {
+		border-bottom: 1px dotted #ccc;
+		text-align: center;
+		text-transform: uppercase;
+		padding-bottom: 15px;
+	}
+
+	& ul {
+		list-style-type: none;
+		margin: 0 0 20px 40px;
+		padding: 0;
+
+		& li {
+			&::before {
+				content: "";
+				width: 8px;
+				display: inline-block;
+				height: 8px;
+				position: relative;
+				top: -2px;
+				border-radius: 50%;
+				margin-right: 9px;
+				background-color: green;
+			}
+		}
+	}
+}
